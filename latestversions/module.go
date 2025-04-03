@@ -45,7 +45,7 @@ const reviewdogActionActionlintVersion = "v1"
 const goReleaserActionVersion = "v5"
 
 // renovate: datasource=github-tags depName=actions/create-github-app-token versioning=docker
-const createGithubAppTokenVersion = "v1"
+const createGithubAppTokenVersion = "v2"
 
 // renovate: datasource=github-tags depName=wagoid/commitlint-github-action versioning=docker
 const commitLintVersion = "v5"
