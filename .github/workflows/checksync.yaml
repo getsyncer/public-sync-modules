@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Check for changes
         uses: getsyncer/action-syncer/checkpr@main
         with:
@@ -34,7 +34,7 @@ jobs:
           app-id: ${{ vars.SYNCER_APP_ID }}
           private-key: ${{ secrets.SYNCER_APP_PEM }}
       - name: Check out code (with token)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ steps.generate_token.outputs.token }}
           ref: ${{ github.event.pull_request.head.ref }}
